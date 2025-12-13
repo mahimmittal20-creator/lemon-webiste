@@ -1,0 +1,68 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "AI & Machine Learning Services",
+    description:
+      "Forecast trends and customer behavior, analyze text, detect objects, suggest content, and spot anomalies.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Automation & Productivity Tools",
+    description:
+      "Automate repetitive tasks, streamline workflows, and extract and classify documents efficiently..",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Data & Analytics Services",
+    description:
+      "Create dashboards, unify data, prepare AI training datasets, and analyze customer behavior.",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "Cloud & Platform Services",
+    description:
+      "Host AI models, store large datasets, provide AI APIs, and run models locally for speed.",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "Customer UX & Marketing AI",
+    description:
+      "Deliver automated support, drive personalized campaigns, and convert speech while analyzing tone.",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "Custom AI Solutions",
+    description:
+      "Build tailored AI systems, advise on strategy, and integrate AI into existing software and platforms.",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+   Everything you need to launch your business
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Lemontek combines top-tier technologies with smart, innovative solutions.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>

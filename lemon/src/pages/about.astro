@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Our Mission</Fragment>
+      <Fragment slot="desc">Innovating and Scaling Businesses for the Future</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-[100px] text-center">
+      <h2 class="font-bold text-3xl text-gray-800">
+        About Our Company
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+       At lemon Tek our goal is to meets excellence in the realm of IT services, we are dedicated to crafting cutting-edge solutions that harness the power of AI and modern data solutions to drive your business forward.
+
+Lemon Tek seamlessly integrates Power of AI into our services, evolving the way businesses leverage intelligence for enhanced productivity and strategic decision-making. Our expertise in harnessing legacy systems and latest trend ensures that your organization stays ahead in the competitive landscape.
+
+Join us on this journey as we navigate the dynamic of IT worlds, where Lemon Tek's commitment to quality, efficiency, and innovation transforms challenges into opportunities.
+
+Stay connected for updates on our latest projects, success stories, and insights into the evolving landscape of AI and data-driven solutions.
+      </p>
+    </div>
+    </div>
+  </Container>
+</Layout>
