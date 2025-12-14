@@ -1,0 +1,47 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Refund Policy">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Refund Policy</Fragment>
+      <Fragment slot="desc">Understand our refund process.</Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-4xl mt-16 prose prose-base md:prose-lg prose-headings:font-bold prose-headings:text-gray-800 prose-a:text-blue-600 prose-a:underline">
+      <h2>Introduction</h2>
+      <p>
+        Lemontek provides access to digital software services.
+      </p>
+
+      <h2>Refund Eligibility</h2>
+      <p>
+        Due to the nature of digital services, refunds are handled on a case-by-case basis.
+      </p>
+      <p>Refunds may be considered if:</p>
+      <ul>
+        <li>A technical issue prevents access to the service and cannot be resolved</li>
+        <li>An incorrect charge occurred</li>
+      </ul>
+
+      <h2>Non-Refundable Cases</h2>
+      <p>Refunds are generally not provided for:</p>
+      <ul>
+        <li>Change of mind after service access</li>
+        <li>Partial usage of the service</li>
+        <li>Custom or usage-based services already delivered</li>
+      </ul>
+
+      <h2>Requesting a Refund</h2>
+      <p>
+        Refund requests must be submitted within 7 days of payment by contacting: Email: <a href="mailto:billing@lemontek.org">billing@lemontek.org</a>
+      </p>
+      <p>
+        Approved refunds will be processed back to the original payment method.
+      </p>
+    </div>
+  </Container>
+</Layout>

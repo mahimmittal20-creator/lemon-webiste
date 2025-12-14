@@ -1,0 +1,60 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Privacy Policy">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Privacy Policy</Fragment>
+      <Fragment slot="desc">Your privacy is important to us.</Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-4xl mt-16 prose prose-base md:prose-lg prose-headings:font-bold prose-headings:text-gray-800 prose-a:text-blue-600 prose-a:underline">
+      <h2>Introduction</h2>
+      <p>
+        Lemontek ("we", "our", or "us") operates the website <a href="https://lemontek.org" target="_blank" rel="noopener">https://lemontek.org</a> and provides software-as-a-service solutions.
+      </p>
+
+      <h2>Information We Collect</h2>
+      <p>We may collect the following information:</p>
+      <ul>
+        <li>Name and email address</li>
+        <li>Payment-related information (processed securely by third-party payment providers)</li>
+        <li>Usage data related to interactions with our software</li>
+        <li>Basic technical data such as IP address, browser type, and device information</li>
+      </ul>
+
+      <h2>How We Use Information</h2>
+      <p>We use collected information to:</p>
+      <ul>
+        <li>Provide and maintain our services</li>
+        <li>Process payments and subscriptions</li>
+        <li>Communicate with customers</li>
+        <li>Improve product functionality and performance</li>
+        <li>Ensure security and prevent fraud</li>
+      </ul>
+
+      <h2>Data Sharing</h2>
+      <p>
+        We do not sell personal data. Information may be shared only with trusted third-party service providers (such as payment processors and analytics tools) solely for operating our services.
+      </p>
+
+      <h2>Data Security</h2>
+      <p>
+        We implement reasonable technical and organizational measures to protect user data. However, no system is completely secure.
+      </p>
+
+      <h2>Your Rights</h2>
+      <p>
+        Users may request access, correction, or deletion of their personal data by contacting us.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy-related questions, contact: Email: <a href="mailto:support@lemontek.org">support@lemontek.org</a>
+      </p>
+    </div>
+  </Container>
+</Layout>

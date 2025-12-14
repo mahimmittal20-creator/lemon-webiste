@@ -1,0 +1,33 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Pricing">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="desc">Custom & Usage-Based Pricing</Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-4xl mt-16 prose prose-base md:prose-lg prose-headings:font-bold prose-headings:text-gray-800 prose-a:text-blue-600 prose-a:underline">
+      <h2>Custom & Usage-Based Pricing</h2>
+      <p>
+        Lemontek provides software-as-a-service (SaaS) solutions with custom and usage-based pricing. Pricing is not fixed and may vary depending on factors such as:
+      </p>
+      <ul>
+        <li>Scope of features requested</li>
+        <li>Volume of usage</li>
+        <li>Type of deployment</li>
+        <li>Level of support required</li>
+      </ul>
+      <p>
+        Customers receive pricing details through direct communication after discussing their requirements.
+      </p>
+      <p>
+        To request pricing or a quote, please contact us at: Email: <a href="mailto:support@lemontek.org">support@lemontek.org</a>
+      </p>
+    </div>
+  </Container>
+</Layout>
